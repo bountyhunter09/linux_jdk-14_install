@@ -24,6 +24,7 @@ echo -e "${blue}Your Java version is ${blue} -->"
 sleep 2
 java -version
 sleep 2
+rm /etc/profile.d/jdk14.0.2.sh &> /dev/null
 sudo touch /etc/profile.d/jdk14.0.2.sh &> /dev/null
 echo "export J2SDKDIR=/usr/lib/jvm/jdk-14.0.2" >> /etc/profile.d/jdk14.0.2.sh 
 echo "export J2REDIR=/usr/lib/jvm/jdk-14.0.2" >> /etc/profile.d/jdk14.0.2.sh 
