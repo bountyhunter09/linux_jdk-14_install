@@ -1,7 +1,8 @@
 #!/bin/bash
 
-echo "Make sure you're install Java JDK 14.0.2 and You are root before installing run this script"
-
+echo "Make sure you're install Java JDK 14.0.2 before installing run this script"
+sleep 3
+sudo su
 sudo update-alternatives --install /usr/bin/java java /usr/lib/jvm/jdk-14.0.2/bin/java 2 &> /dev/null
 sudo update-alternatives --config java;2 &> /dev/null
 sudo update-alternatives --install /usr/bin/jar jar /usr/lib/jvm/jdk-14.0.2/bin/jar 2 &> /dev/null
