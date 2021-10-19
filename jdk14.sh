@@ -12,7 +12,7 @@ echo -e "${try}${bold}Make sure you're root before run this script ${try} ${gree
 
 
 
-read -p "If you Download Jdk 14.0.2 ??? please type yes or no and press enter Thank You : " filedown
+read -p "If you Download Jdk 14.0.2 ??? please type yes or no and press enter : " filedown
 
   if [ "$filedown" = "no" ] ;
 
