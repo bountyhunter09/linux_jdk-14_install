@@ -8,7 +8,7 @@ make sure you are root user
 
 sudo su 
 
-git clone https://github.com/bountyhunter09/linux_jdk-14_install.git && cd linux_jdk-14_install && chmod +x jdk14.sh
+git clone https://github.com/bountyhunter09/linux_jdk-14_install.git && chmod 777 linux_jdk-14_install && cd linux_jdk-14_install && chmod +x jdk14.sh
 
 ./jdk14.sh
 
