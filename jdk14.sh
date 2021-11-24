@@ -21,6 +21,8 @@ then
 clear
 echo -e "${red}${bold}Make sure you're root before run this script ${bold} ${red}"
 sleep 2
+sudo dpkg -i jdk-14.0.2_linux-x64_bin.deb
+sleep 1
 echo -e "${green}Please Select java jdk 14.0.2 mode number and press enter${green}"
 sleep 1
 echo -e "${try}In bellow${try}"
@@ -65,6 +67,7 @@ echo -e "${green}Please Select java jdk 14.0.2 mode number and press enter${gree
 sleep 1
 echo -e "${try}In bellow${try}"
 sudo update-alternatives --install /usr/bin/java java /usr/lib/jvm/jdk-14.0.2/bin/java 2 &> /dev/null
+sleep 1
 sudo update-alternatives --config java
 sudo update-alternatives --install /usr/bin/jar jar /usr/lib/jvm/jdk-14.0.2/bin/jar 2 &> /dev/null
 sudo update-alternatives --install /usr/bin/javac javac /usr/lib/jvm/jdk-14.0.2/bin/javac 2 &> /dev/null
